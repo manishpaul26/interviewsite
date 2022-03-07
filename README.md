@@ -51,6 +51,9 @@ http://localhost:4502/content/interviewsite/us/en/contact-us-page.html
 - Front end files-
     - https://github.com/manishpaul26/interviewsite/blob/master/ui.frontend/src/main/webpack/components/contactus.js
 
+- CSS using flexbox-
+    - https://github.com/manishpaul26/interviewsite/blob/master/ui.frontend/src/main/webpack/components/_contactus.scss
+
 
 
 
