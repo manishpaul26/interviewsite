@@ -10,12 +10,26 @@
     - Salesforce Service - https://github.com/manishpaul26/interviewsite/blob/master/core/src/main/java/com/mysite/core/services/SalesforceServiceImpl.java
     - HTTP Client Service - https://github.com/manishpaul26/interviewsite/blob/master/core/src/main/java/com/mysite/core/services/HttpClientServiceImpl.java
     - Contact us servlet - https://github.com/manishpaul26/interviewsite/blob/master/core/src/main/java/com/mysite/core/servlets/ContactUsServlet.java
+    - Image Sling Model - https://github.com/manishpaul26/interviewsite/blob/master/core/src/main/java/com/mysite/core/models/ImageImpl.java
     - Some beans - https://github.com/manishpaul26/interviewsite/tree/master/core/src/main/java/com/mysite/core/beans
 
 - Tests ->
     - https://github.com/manishpaul26/interviewsite/tree/master/core/src/test/java/com/mysite/core/services
     - https://github.com/manishpaul26/interviewsite/tree/master/core/src/test/java/com/mysite/core/servlets
     - https://github.com/manishpaul26/interviewsite/tree/master/core/src/test/java/com/mysite/core/models
+
+
+- Apps ->
+    - /apps/interviewsite/components/image
+    - /apps/interviewsite/components/contactus
+
+- Image Dialog-
+    - https://github.com/manishpaul26/interviewsite/tree/master/ui.apps/src/main/content/jcr_root/apps/interviewsite/components/image/_cq_dialog
+
+
+
+- Front end files-
+    - https://github.com/manishpaul26/interviewsite/blob/master/ui.frontend/src/main/webpack/components/contactus.js
 
 
 ## Project has now been built for cloud sdk using archetype 35

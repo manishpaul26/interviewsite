@@ -1,7 +1,4 @@
 
-
-
-alert('here')
 const form = document.querySelector('.contactus-form');
 
 
