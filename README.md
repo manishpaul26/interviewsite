@@ -10,6 +10,12 @@
 - Sample content and images have been added to the codebase and the filters have been updated to replace to ensure correct content is deployed.
 
 
+## Versions-
+
+- AEM - Cloud.
+
+- Maven Archetype- 35
+
 ## Demo pages-
 
 http://localhost:4502/editor.html/content/interviewsite/us/en/image-demo-page.html
@@ -60,7 +66,12 @@ Open Module Settings by right clicking on the project, go to Libraries. Search f
 
 ## Screenshots-
 
+### Contact us-
 ![alt text](https://github.com/manishpaul26/interviewsite/blob/master/screenshots/contact-us.png)
+
+
+### Image Dialog
+![alt text](https://github.com/manishpaul26/interviewsite/blob/master/screenshots/thumbnail-image.png)
 
 
 ## Modules
@@ -88,3 +99,7 @@ Or to deploy only a single content package, run in the sub-module directory (i.e
     mvn clean install -PautoInstallPackage
 
 
+## Known Issues-
+
+- Problem running junit for Image component. Need more analysis.
+- CSS styling has not been implemented due to time constraints
