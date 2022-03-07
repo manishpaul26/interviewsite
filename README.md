@@ -10,6 +10,11 @@
 - Sample content and images have been added to the codebase and the filters have been updated to replace to ensure correct content is deployed.
 
 
+## Versions-
+
+AEM - Cloud
+Maven Archetype- 35
+
 ## Demo pages-
 
 http://localhost:4502/editor.html/content/interviewsite/us/en/image-demo-page.html
