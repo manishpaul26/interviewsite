@@ -12,8 +12,9 @@
 
 ## Versions-
 
-AEM - Cloud
-Maven Archetype- 35
+- AEM - Cloud.
+
+- Maven Archetype- 35
 
 ## Demo pages-
 
