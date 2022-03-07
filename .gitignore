@@ -1,0 +1,10 @@
+ui.frontend/node_modules/
+ui.frontend/node/**
+core/target/**
+it.tests/target/**
+ui.apps/target/**
+ui.config/target/**
+**/target/**
+
+
+.idea

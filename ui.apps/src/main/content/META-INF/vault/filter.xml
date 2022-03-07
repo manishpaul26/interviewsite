@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/interviewsite/clientlibs"/>
+    <filter root="/apps/interviewsite/components"/>
+    <filter root="/apps/interviewsite/i18n"/>
+</workspaceFilter>
