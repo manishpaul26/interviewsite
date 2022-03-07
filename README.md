@@ -93,3 +93,6 @@ Or to deploy only a single content package, run in the sub-module directory (i.e
     mvn clean install -PautoInstallPackage
 
 
+## Known Issues-
+
+Problem running junit for Image component. Need more analysis.
