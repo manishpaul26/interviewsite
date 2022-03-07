@@ -1,18 +1,36 @@
 # Sample AEM project template
 
-This is a project template for AEM-based applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
-
 
 
 ## Main Project Files-
 
 
 - core ->
+    - Image Implementation - https://github.com/manishpaul26/interviewsite/blob/master/core/src/main/java/com/mysite/core/models/ImageImpl.java
+    - Salesforce Service - https://github.com/manishpaul26/interviewsite/blob/master/core/src/main/java/com/mysite/core/services/SalesforceServiceImpl.java
+    - HTTP Client Service - https://github.com/manishpaul26/interviewsite/blob/master/core/src/main/java/com/mysite/core/services/HttpClientServiceImpl.java
+    - Contact us servlet - https://github.com/manishpaul26/interviewsite/blob/master/core/src/main/java/com/mysite/core/servlets/ContactUsServlet.java
+    - Some beans - https://github.com/manishpaul26/interviewsite/tree/master/core/src/main/java/com/mysite/core/beans
+
+- Tests ->
+    - https://github.com/manishpaul26/interviewsite/tree/master/core/src/test/java/com/mysite/core/services
+    - https://github.com/manishpaul26/interviewsite/tree/master/core/src/test/java/com/mysite/core/servlets
+    - https://github.com/manishpaul26/interviewsite/tree/master/core/src/test/java/com/mysite/core/models
+
+
+## Project has now been built for cloud sdk using archetype 35
+
+
 
 
 ## If JUnits fail in Intellij because of gson-
 
 Open Module Settings by right clicking on the project, go to Libraries. Search for gson, right click -> Add to Modules -> code. This should fix any `NoClassDefFound` exceptions.
+
+
+## Screenshots-
+
+
 
 
 ## Modules
