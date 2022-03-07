@@ -1,1 +1,129 @@
-!function(){var e={356:function(){!function(){"use strict";var e='[data-cmp-is="helloworld"]',t='[data-cmp-hook-helloworld="property"]',o='[data-cmp-hook-helloworld="model"]';function n(e){e&&e.element&&function(e){e.element.removeAttribute("data-cmp-is");var n=e.element.querySelectorAll(t);n=1==n.length?n[0].textContent:null;var r=e.element.querySelectorAll(o);r=1==r.length?r[0].textContent:null,console&&console.log&&console.log("HelloWorld component JavaScript example","\nText property:\n",n,"\nModel message:\n",r)}(e)}function r(){for(var t=document.querySelectorAll(e),o=0;o<t.length;o++)new n({element:t[o]});var r=window.MutationObserver||window.WebKitMutationObserver||window.MozMutationObserver,l=document.querySelector("body");new r((function(t){t.forEach((function(t){var o=[].slice.call(t.addedNodes);o.length>0&&o.forEach((function(t){t.querySelectorAll&&[].slice.call(t.querySelectorAll(e)).forEach((function(e){new n({element:e})}))}))}))})).observe(l,{subtree:!0,childList:!0,characterData:!0})}"loading"!==document.readyState?r():document.addEventListener("DOMContentLoaded",r)}()},17:function(){alert("here");document.querySelector(".contactus-form");document.querySelector(".contactus-form").addEventListener("submit",(function(e){e.preventDefault();let t=new FormData(this),o={};for(let e of t)if(void 0===o[e[0]]){let n=t.getAll(e[0]);n.length>1?o[e[0]]=n:o[e[0]]=n[0]}let n={};switch(n.method=this.method,n.headers={"Content-Type":"application/json"},this.method.toLowerCase()){case"post":n.body=JSON.stringify(o);break;case"get":n.headers={"Content-Type":"application/json"}}fetch(this.action,n).then((e=>e.json())).then((e=>{console.log(e)}))}))}},t={};function o(n){var r=t[n];if(void 0!==r)return r.exports;var l=t[n]={exports:{}};return e[n](l,l.exports,o),l.exports}o.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return o.d(t,{a:t}),t},o.d=function(e,t){for(var n in t)o.o(t,n)&&!o.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},o.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},function(){"use strict";o(356),o(17)}()}();
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (function() { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/main/webpack/site/main.scss":
+/*!*****************************************!*\
+  !*** ./src/main/webpack/site/main.scss ***!
+  \*****************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://aem-maven-archetype/./src/main/webpack/site/main.scss?");
+
+/***/ }),
+
+/***/ "./src/main/webpack/site/main.ts":
+/*!***************************************!*\
+  !*** ./src/main/webpack/site/main.ts ***!
+  \***************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.scss */ \"./src/main/webpack/site/main.scss\");\n/* harmony import */ var _Users_manish_Development_Workspace_AEM_interviewsite_ui_frontend_src_main_webpack_components_helloworld_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./src/main/webpack/components/_helloworld.js */ \"./src/main/webpack/components/_helloworld.js\");\n/* harmony import */ var _Users_manish_Development_Workspace_AEM_interviewsite_ui_frontend_src_main_webpack_components_helloworld_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Users_manish_Development_Workspace_AEM_interviewsite_ui_frontend_src_main_webpack_components_helloworld_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _Users_manish_Development_Workspace_AEM_interviewsite_ui_frontend_src_main_webpack_components_contactus_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./src/main/webpack/components/contactus.js */ \"./src/main/webpack/components/contactus.js\");\n/* harmony import */ var _Users_manish_Development_Workspace_AEM_interviewsite_ui_frontend_src_main_webpack_components_contactus_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Users_manish_Development_Workspace_AEM_interviewsite_ui_frontend_src_main_webpack_components_contactus_js__WEBPACK_IMPORTED_MODULE_2__);\n\n;\n;\n\n\n\n\n//# sourceURL=webpack://aem-maven-archetype/./src/main/webpack/site/main.ts?");
+
+/***/ }),
+
+/***/ "./src/main/webpack/components/_helloworld.js":
+/*!****************************************************!*\
+  !*** ./src/main/webpack/components/_helloworld.js ***!
+  \****************************************************/
+/***/ (function() {
+
+eval("// Example of how a component should be initialized via JavaScript\n// This script logs the value of the component's text property model message to the console\n\n(function() {\n    \"use strict\";\n\n    // Best practice:\n    // For a good separation of concerns, don't rely on the DOM structure or CSS selectors,\n    // but use dedicated data attributes to identify all elements that the script needs to\n    // interact with.\n    var selectors = {\n        self:      '[data-cmp-is=\"helloworld\"]',\n        property:  '[data-cmp-hook-helloworld=\"property\"]',\n        message:   '[data-cmp-hook-helloworld=\"model\"]'\n    };\n\n    function HelloWorld(config) {\n\n        function init(config) {\n            // Best practice:\n            // To prevents multiple initialization, remove the main data attribute that\n            // identified the component.\n            config.element.removeAttribute(\"data-cmp-is\");\n\n            var property = config.element.querySelectorAll(selectors.property);\n            property = property.length == 1 ? property[0].textContent : null;\n\n            var model = config.element.querySelectorAll(selectors.message);\n            model = model.length == 1 ? model[0].textContent : null;\n\n            if (console && console.log) {\n                console.log(\n                    \"HelloWorld component JavaScript example\",\n                    \"\\nText property:\\n\", property,\n                    \"\\nModel message:\\n\", model\n                );\n            }\n        }\n\n        if (config && config.element) {\n            init(config);\n        }\n    }\n\n    // Best practice:\n    // Use a method like this mutation obeserver to also properly initialize the component\n    // when an author drops it onto the page or modified it with the dialog.\n    function onDocumentReady() {\n        var elements = document.querySelectorAll(selectors.self);\n        for (var i = 0; i < elements.length; i++) {\n            new HelloWorld({ element: elements[i] });\n        }\n\n        var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;\n        var body             = document.querySelector(\"body\");\n        var observer         = new MutationObserver(function(mutations) {\n            mutations.forEach(function(mutation) {\n                // needed for IE\n                var nodesArray = [].slice.call(mutation.addedNodes);\n                if (nodesArray.length > 0) {\n                    nodesArray.forEach(function(addedNode) {\n                        if (addedNode.querySelectorAll) {\n                            var elementsArray = [].slice.call(addedNode.querySelectorAll(selectors.self));\n                            elementsArray.forEach(function(element) {\n                                new HelloWorld({ element: element });\n                            });\n                        }\n                    });\n                }\n            });\n        });\n\n        observer.observe(body, {\n            subtree: true,\n            childList: true,\n            characterData: true\n        });\n    }\n\n    if (document.readyState !== \"loading\") {\n        onDocumentReady();\n    } else {\n        document.addEventListener(\"DOMContentLoaded\", onDocumentReady);\n    }\n\n}());\n\n\n//# sourceURL=webpack://aem-maven-archetype/./src/main/webpack/components/_helloworld.js?");
+
+/***/ }),
+
+/***/ "./src/main/webpack/components/contactus.js":
+/*!**************************************************!*\
+  !*** ./src/main/webpack/components/contactus.js ***!
+  \**************************************************/
+/***/ (function() {
+
+eval("\nconst form = document.querySelector('.contactus-form');\n\n\ndocument.querySelector('.contactus-form').addEventListener('submit', function(e) {\n    e.preventDefault();\n    let formData = new FormData(this);\n    let parsedData = {};\n\n    for(let name of formData) {\n\n      if (typeof(parsedData[name[0]]) == \"undefined\") {\n        let tempdata = formData.getAll(name[0]);\n        if (tempdata.length > 1) {\n          parsedData[name[0]] = tempdata;\n        } else {\n          parsedData[name[0]] = tempdata[0];\n        }\n      }\n    }\n\n    let options = {};\n    options.method = this.method;\n    options.headers = {'Content-Type': 'application/json'};\n    switch (this.method.toLowerCase()) {\n      case 'post':\n        options.body = JSON.stringify(parsedData);\n        break;\n      case 'get':\n        options.headers = {'Content-Type': 'application/json'};\n      break;\n    }\n\n    fetch(this.action, options)\n    .then(r => r.json())\n    .then(data => {\n      const submissionTextEl = document.querySelector('.contactus-submission-text');\n      submissionTextEl.innerHTML = '<div class=\"sucess-message\">Thank you for submitting the form!</div>'\n    });\n});\n\n//# sourceURL=webpack://aem-maven-archetype/./src/main/webpack/components/contactus.js?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	!function() {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = function(module) {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				function() { return module['default']; } :
+/******/ 				function() { return module; };
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/main/webpack/site/main.ts");
+/******/ 	
+/******/ })()
+;

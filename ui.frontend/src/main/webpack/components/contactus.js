@@ -31,7 +31,10 @@ document.querySelector('.contactus-form').addEventListener('submit', function(e)
       break;
     }
 
-    fetch(this.action, options).then(r => r.json()).then(data => {
-      console.log(data);
+    fetch(this.action, options)
+    .then(r => r.json())
+    .then(data => {
+      const submissionTextEl = document.querySelector('.contactus-submission-text');
+      submissionTextEl.innerHTML = '<div class="sucess-message">Thank you for submitting the form!</div>'
     });
 });
