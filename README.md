@@ -101,4 +101,5 @@ Or to deploy only a single content package, run in the sub-module directory (i.e
 
 ## Known Issues-
 
-Problem running junit for Image component. Need more analysis.
+- Problem running junit for Image component. Need more analysis.
+- CSS styling has not been implemented due to time constraints
