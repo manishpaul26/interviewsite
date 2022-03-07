@@ -48,7 +48,7 @@ public class ContactUsServlet extends SlingAllMethodsServlet {
 
 
         HttpClientResponse salesforceResponse = salesforceService.submitContactUsForm(contactForm);
-        response.getWriter().write(salesforceResponse.getResponseBody());
+        response.getWriter().write(new Gson().toJson(salesforceResponse.getResponseBody()));
         response.setStatus(SlingHttpServletResponse.SC_OK);
 
     }

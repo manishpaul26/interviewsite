@@ -45,7 +45,7 @@ public class ContactUsServletTest {
 
         contactUsServlet.doPost(context.request(), context.response());
 
-        assertEquals(SUCCESS_MESSAGE, context.response().getOutputAsString());
+        assertEquals(new Gson().toJson(SUCCESS_MESSAGE), context.response().getOutputAsString());
         assertEquals(SlingHttpServletResponse.SC_OK, context.response().getStatus());
     }
 
