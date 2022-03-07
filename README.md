@@ -67,7 +67,7 @@ Open Module Settings by right clicking on the project, go to Libraries. Search f
 ## Screenshots-
 
 ### Contact us-
-![alt text](https://github.com/manishpaul26/interviewsite/blob/master/screenshots/contact-us.png)
+![alt text](https://github.com/manishpaul26/interviewsite/blob/master/screenshots/contact-us-form.png)
 
 
 ### Image Dialog
